@@ -1,0 +1,14 @@
+.pr {
+    position: relative;
+}
+
+.cf::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto 0;
+}
