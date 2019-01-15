@@ -10,7 +10,7 @@
                 <ul>
                     <li><a href="#">code</a></li>
                     <li><router-link to="/articleList">article</router-link></li>
-                    <li><a href="#">like</a></li>
+                    <li><router-link to="/funny">funny</router-link></li>
                 </ul> 
         </div>
     </nav>

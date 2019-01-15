@@ -13,7 +13,7 @@
                                 v-for="(innerItem, j) in item.articles" 
                                 :key="j"
                             >
-                                <router-link to="/articleDetail">{{innerItem.name}}</router-link>
+                                <router-link to="/funny/bubble">{{innerItem.name}}</router-link>
                             </li>
                         </ul>  
                     </el-collapse-item>
@@ -22,17 +22,7 @@
 
             <!-- 右侧内容展示部分 -->
             <div class="right">
-                <ul class="right-content">
-                    <li class="right-item" v-for="(item, index) in articlesList" :key="index">
-                        <router-link to="/articleDetail">
-                            <img :src="item.image" alt="">
-                            <div class="article-detail">
-                                <h3>{{item.title}}</h3>
-                                <p>{{item.content}}</p>
-                            </div>
-                        </router-link>
-                    </li>
-                </ul>
+                <router-view></router-view>
             </div>
         </div>      
     </div>  
