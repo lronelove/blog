@@ -44,7 +44,7 @@ export default {
           navList: [ // 导航列表数据
               {
                   year: '2018', // 年
-                  yearDesc: '流年碎忆，2018', // 当年描述
+                  yearDesc: '小游戏', // 当年描述
                   articles: [ // 当年文章列表
                     {
                         name: '萤火虫',
@@ -58,7 +58,7 @@ export default {
               },
               {
                   year: '2019', // 年
-                  yearDesc: '平淡是真，2019', // 当年描述
+                  yearDesc: '动画', // 当年描述
                   articles: [ // 当年文章列表
                     {
                         name: '萤火虫',
