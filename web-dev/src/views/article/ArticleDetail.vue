@@ -2,10 +2,10 @@
   <default>
     <div class="doc-wrap">
         <div class="doc container">
-            <h1 class="title">蒲公英</h1>
-            <p class="author">lronelove</p>
+            <h1 class="title">{{article.title}}</h1>
+            <p class="author">{{article.author}}</p>
             <article class="content">
-                流年似水年华，四处漂流，何处是家?
+                {{article.content}}
             </article>
         </div>
     </div>
@@ -14,6 +14,7 @@
 
 <script>
 import Default from '@/layout/Default.vue'
+import api from '@/service/index.js'
 
 export default {
   name: 'articleDetail',
@@ -22,10 +23,44 @@ export default {
   },
   data () {
       return {
-
+          article: {
+              title: '',
+              author: 'lronelove',
+              content: '',
+              id: -1
+          }
       }
   },
   methods: {
+    // 初始化函数
+    init () {
+        this.getArticleDetail()
+    },
+
+    // 获取文章详情
+    getArticleDetail () {
+        const id = this.$route.query.id
+
+        api.article.getArticleDetail(id).then(res => {
+            if (res.data.code === 0) {
+                let data = res.data.data
+                this.handleArticleData(data)
+            } else {
+                this.$message({
+                    'type': 'success',
+                    message: res.data.msg || '文章已不存在～'
+                })
+            }
+        })
+    },
+
+    // 处理文章详情数据
+    handleArticleData (data) {
+         this.article = data
+    },
+  },
+  created () {
+    this.init()
   }
 }
 </script>

@@ -23,9 +23,9 @@ module.exports = appInfo => {
             // 用户名
             user: 'root',
             // 密码
-            password: 'root',
+            password: 'w657828543',
             // 数据库名
-            database: 'segi',
+            database: 'lronelove',
         },
         // 是否加载到 app 上，默认开启
         app: true,

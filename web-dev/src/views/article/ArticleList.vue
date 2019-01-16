@@ -7,13 +7,13 @@
             <div class="left">
                 <el-collapse v-model="activeNames" @change="handleChange">
                     <el-collapse-item v-for="(item, index) in navList" :name="item.year" :key="index">
-                        <div slot="title" class="left-year">{{item.yearDesc}}</div>
+                        <div slot="title" class="left-year">{{item.slogan}}</div>
                         <ul class="left-item">
                             <li 
                                 v-for="(innerItem, j) in item.articles" 
                                 :key="j"
                             >
-                                <router-link to="/articleDetail">{{innerItem.name}}</router-link>
+                                <router-link :to="{ path: '/articleDetail', query: { id: innerItem.id } }">{{innerItem.title}}</router-link>
                             </li>
                         </ul>  
                     </el-collapse-item>
@@ -24,7 +24,7 @@
             <div class="right">
                 <ul class="right-content">
                     <li class="right-item" v-for="(item, index) in articlesList" :key="index">
-                        <router-link to="/articleDetail">
+                        <router-link :to="{ path: '/articleDetail', query: { id: item.id } }">
                             <img :src="item.image" alt="">
                             <div class="article-detail">
                                 <h3>{{item.title}}</h3>
@@ -42,6 +42,7 @@
 
 <script>
 import Default from '@/layout/Default.vue'
+import api from '@/service/index.js'
 
 export default {
   name: 'articleList',
@@ -52,55 +53,84 @@ export default {
       return {
           activeNames: [], // 左侧导航展开的栏目名字
           navList: [ // 导航列表数据
-              {
+              /*{
                   year: '2018', // 年
-                  yearDesc: '流年碎忆，2018', // 当年描述
+                  slogan: '流年碎忆，2018', // 当年描述
                   articles: [ // 当年文章列表
                     {
-                        name: '萤火虫',
+                        title: '萤火虫',
                         id: 1
                     },
                     {
-                        name: '牛肉面',
+                        title: '牛肉面',
                         id: 2
                     },
                   ]
-              },
-              {
-                  year: '2019', // 年
-                  yearDesc: '平淡是真，2019', // 当年描述
-                  articles: [ // 当年文章列表
-                    {
-                        name: '萤火虫',
-                        id: 3
-                    },
-                    {
-                        name: '牛肉面',
-                        id: 4
-                    },
-                  ]
-              }
+              }*/
           ],
           articlesList: [ // 文章列表数据
-            {
+           /* {
                 image: require('@/assets/img/logo.jpeg'),
                 title: '蒲公英',
                 content: '文章描述',
                 id: 1
-            },
-            {
-                image: require('@/assets/img/logo.jpeg'),
-                title: '蒲公英',
-                content: '文章描述',
-                id: 2
-            }  
+            }   */
           ]
       }
   },
   methods: {
       handleChange(val) {
         console.log(val);
+      },
+
+      // 初始化函数
+      init () {
+          this.queryArticleList() // 获取文章列表
+          this.queryArticleNav() // 获取文章导航
+      },
+
+      // 获取文章导航
+      queryArticleNav () {
+          api.article.queryArticleNav().then(res => {
+              if (res.data.code === 0) {
+                  let data = res.data.data
+                  this.handleArticleNav(data)
+              } else {
+                  this.$message({
+                      'type': 'success',
+                      message: res.data.msg || '亲，数据出了点问题～'
+                  })
+              }
+          })
+      },
+
+      // 处理文章导航
+      handleArticleNav (data) {
+          this.navList = data
+      },
+
+      // 获取文章列表
+      queryArticleList () {
+          api.article.queryArticleList().then(res => {
+              if (res.data.code === 0) {
+                  let data = res.data.data
+                  this.handleArticleList(data)
+              } else {
+                  this.$message({
+                      'type': 'success',
+                      message: res.data.msg || '亲，数据出了点问题～'
+                  })
+              }
+          })
+      },
+
+      // 处理文章列表
+      handleArticleList (data) {
+        this.articlesList = data
       }
+  },
+  created () {
+      this.init() // 初始化函数
   }
 }
 </script>

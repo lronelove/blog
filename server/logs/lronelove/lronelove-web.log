@@ -1,0 +1,138 @@
+2019-01-16 12:48:47,513 ERROR 8117 [-/::1/-/19ms GET /api/v1/article/list] nodejs.ER_SP_DOES_NOT_EXISTError: ER_SP_DOES_NOT_EXIST: FUNCTION lronelove.to_char does not exist
+    at Query.Sequence._packetToError (/Users/lronelove/Documents/fun/home/server/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/lronelove/Documents/fun/home/server/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/lronelove/Documents/fun/home/server/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/lronelove/Documents/fun/home/server/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/lronelove/Documents/fun/home/server/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/lronelove/Documents/fun/home/server/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/lronelove/Documents/fun/home/server/node_modules/mysql/lib/Connection.js:502:10)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    --------------------
+    at Pool.query (/Users/lronelove/Documents/fun/home/server/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/lronelove/Documents/fun/home/server/node_modules/pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/Users/lronelove/Documents/fun/home/server/node_modules/pify/index.js:12:10)
+    at Pool.ret [as query] (/Users/lronelove/Documents/fun/home/server/node_modules/pify/index.js:56:34)
+    at RDSClient.proto._query (/Users/lronelove/Documents/fun/home/server/node_modules/ali-rds/lib/client.js:34:20)
+    at RDSClient.proto.query (/Users/lronelove/Documents/fun/home/server/node_modules/ali-rds/lib/operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (/Users/lronelove/Documents/fun/home/server/node_modules/co/index.js:65:19)
+    at /Users/lronelove/Documents/fun/home/server/node_modules/co/index.js:54:5
+    sql: SELECT * FROM article WHERE status = 1 AND to_char(create_time,'yyyy') = 2018
+code: "ER_SP_DOES_NOT_EXIST"
+errno: 1305
+sqlMessage: "FUNCTION lronelove.to_char does not exist"
+sqlState: "42000"
+index: 0
+sql: "SELECT * FROM article WHERE status = 1 AND to_char(create_time,'yyyy') = 2018"
+name: "ER_SP_DOES_NOT_EXISTError"
+pid: 8117
+hostname: lronelove.local
+
+2019-01-16 12:52:07,591 ERROR 8163 [-/::1/-/12ms GET /api/v1/article/list] nodejs.ER_PARSE_ERRORError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%Y) = DATE_FORMAT(SYSDATE(), %Y)' at line 1
+    at Query.Sequence._packetToError (/Users/lronelove/Documents/fun/home/server/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/lronelove/Documents/fun/home/server/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/lronelove/Documents/fun/home/server/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/lronelove/Documents/fun/home/server/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/lronelove/Documents/fun/home/server/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/lronelove/Documents/fun/home/server/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/lronelove/Documents/fun/home/server/node_modules/mysql/lib/Connection.js:502:10)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    --------------------
+    at Pool.query (/Users/lronelove/Documents/fun/home/server/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/lronelove/Documents/fun/home/server/node_modules/pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/Users/lronelove/Documents/fun/home/server/node_modules/pify/index.js:12:10)
+    at Pool.ret [as query] (/Users/lronelove/Documents/fun/home/server/node_modules/pify/index.js:56:34)
+    at RDSClient.proto._query (/Users/lronelove/Documents/fun/home/server/node_modules/ali-rds/lib/client.js:34:20)
+    at RDSClient.proto.query (/Users/lronelove/Documents/fun/home/server/node_modules/ali-rds/lib/operator.js:54:29)
+    at proto.query.next (<anonymous>)
+    at onFulfilled (/Users/lronelove/Documents/fun/home/server/node_modules/co/index.js:65:19)
+    at /Users/lronelove/Documents/fun/home/server/node_modules/co/index.js:54:5
+    sql: SELECT * FROM article o WHERE DATE_FORMAT(o.created_time, %Y) = DATE_FORMAT(SYSDATE(), %Y);  
+code: "ER_PARSE_ERROR"
+errno: 1064
+sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%Y) = DATE_FORMAT(SYSDATE(), %Y)' at line 1"
+sqlState: "42000"
+index: 0
+sql: "SELECT * FROM article o WHERE DATE_FORMAT(o.created_time, %Y) = DATE_FORMAT(SYSDATE(), %Y);  "
+name: "ER_PARSE_ERRORError"
+pid: 8163
+hostname: lronelove.local
+
+2019-01-16 14:20:08,712 ERROR 8914 [-/::1/-/7ms GET /api/v1/article/detail?id=1] nodejs.TypeError: Cannot read property 'detail' of undefined
+    at ArticleController.detail (/Users/lronelove/Documents/fun/home/server/app/controller/article.js:20:48)
+    at Object.callFn (/Users/lronelove/Documents/fun/home/server/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/lronelove/Documents/fun/home/server/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/lronelove/Documents/fun/home/server/node_modules/egg-core/lib/utils/index.js:44:21)
+    at wrappedController (/Users/lronelove/Documents/fun/home/server/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/lronelove/Documents/fun/home/server/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/lronelove/Documents/fun/home/server/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/lronelove/Documents/fun/home/server/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/lronelove/Documents/fun/home/server/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/lronelove/Documents/fun/home/server/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+
+pid: 8914
+hostname: lronelove.local
+
+2019-01-16 14:28:35,322 ERROR 8926 [-/::1/-/9ms GET /api/v1/article/detail?id=1] nodejs.TypeError: this.ctx.service.detail is not a function
+    at ArticleController.detail (/Users/lronelove/Documents/fun/home/server/app/controller/article.js:20:41)
+    at Object.callFn (/Users/lronelove/Documents/fun/home/server/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/lronelove/Documents/fun/home/server/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/lronelove/Documents/fun/home/server/node_modules/egg-core/lib/utils/index.js:44:21)
+    at wrappedController (/Users/lronelove/Documents/fun/home/server/node_modules/egg-core/lib/utils/router.js:322:18)
+    at dispatch (/Users/lronelove/Documents/fun/home/server/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/lronelove/Documents/fun/home/server/node_modules/koa-router/node_modules/koa-compose/index.js:45:18)
+    at /Users/lronelove/Documents/fun/home/server/node_modules/koa-router/lib/router.js:346:16
+    at dispatch (/Users/lronelove/Documents/fun/home/server/node_modules/koa-router/node_modules/koa-compose/index.js:44:32)
+    at /Users/lronelove/Documents/fun/home/server/node_modules/koa-router/node_modules/koa-compose/index.js:36:12
+
+pid: 8926
+hostname: lronelove.local
+
+2019-01-16 14:31:25,257 ERROR 8990 [-/::1/-/11ms GET /api/v1/article/detail?id=1] nodejs.ReferenceError: content is not defined
+    at ArticleService.detail (/Users/lronelove/Documents/fun/home/server/app/service/article.js:68:22)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+pid: 8990
+hostname: lronelove.local
+
+2019-01-16 14:38:04,041 ERROR 8997 [-/::1/-/20ms GET /api/v1/article/detail] nodejs.TypeError: Cannot read property 'id' of null
+    at ArticleService.detail (/Users/lronelove/Documents/fun/home/server/app/service/article.js:66:22)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 8997
+hostname: lronelove.local
+
+2019-01-16 14:38:09,307 ERROR 8997 [-/::1/-/3ms GET /api/v1/article/detail] nodejs.TypeError: Cannot read property 'id' of null
+    at ArticleService.detail (/Users/lronelove/Documents/fun/home/server/app/service/article.js:66:22)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 8997
+hostname: lronelove.local
+
+2019-01-16 14:38:39,313 ERROR 8997 [-/::1/-/1ms GET /api/v1/article/detail] nodejs.TypeError: Cannot read property 'id' of null
+    at ArticleService.detail (/Users/lronelove/Documents/fun/home/server/app/service/article.js:66:22)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 8997
+hostname: lronelove.local
+
+2019-01-16 14:38:42,530 ERROR 8997 [-/::1/-/1ms GET /api/v1/article/detail] nodejs.TypeError: Cannot read property 'id' of null
+    at ArticleService.detail (/Users/lronelove/Documents/fun/home/server/app/service/article.js:66:22)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 8997
+hostname: lronelove.local
+
+2019-01-16 14:39:18,621 ERROR 8997 [-/::1/-/2ms GET /api/v1/article/detail] nodejs.TypeError: Cannot read property 'id' of null
+    at ArticleService.detail (/Users/lronelove/Documents/fun/home/server/app/service/article.js:66:22)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 8997
+hostname: lronelove.local
+

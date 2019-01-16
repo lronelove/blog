@@ -1,17 +1,24 @@
 /* 处理文章详情，列表以及对应回复的操作 */
 const Controller = require('../core/base_controller.js')
-class ArticleController extends Controller { 
-  // 评论取消点赞
-  async unlike () {
-    const body = this.ctx.request.body
-    const { userId, replyId } = body
-    const data = await this.ctx.service.article.unlike(userId, replyId)
 
-    if (data) {
-      this.success('', '取消点赞成功')
-    } else {
-      this.fail('', '操作失败')
-    }
+class ArticleController extends Controller { 
+  // 文章列表
+  async list () {
+    const data = await this.ctx.service.article.list()
+    this.success(data)
+  }
+
+  // 文章导航列表
+  async nav () {
+    const data = await this.ctx.service.article.nav()
+    this.success(data)
+  }
+
+  // 文章详情
+  async detail () {
+    const id = this.ctx.query.id
+    const data = await this.ctx.service.article.detail(id)
+    this.success(data)
   }
 }
 

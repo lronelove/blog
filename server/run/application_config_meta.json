@@ -1,0 +1,314 @@
+{
+  "keys": "/Users/lronelove/Documents/fun/home/server/config/config.default.js",
+  "middleware": "/Users/lronelove/Documents/fun/home/server/config/config.default.js",
+  "security": {
+    "csrf": {
+      "enable": "/Users/lronelove/Documents/fun/home/server/config/config.default.js",
+      "ignoreJSON": "/Users/lronelove/Documents/fun/home/server/config/config.default.js",
+      "useSession": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-security/config/config.default.js",
+      "cookieName": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-security/config/config.default.js",
+      "sessionName": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-security/config/config.default.js",
+      "headerName": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-security/config/config.default.js",
+      "bodyName": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-security/config/config.default.js",
+      "queryName": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-security/config/config.default.js"
+    },
+    "domainWhiteList": "/Users/lronelove/Documents/fun/home/server/config/config.default.js",
+    "protocolWhiteList": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-security/config/config.default.js",
+    "xframe": {
+      "enable": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-security/config/config.default.js"
+    },
+    "hsts": {
+      "enable": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-security/config/config.local.js",
+      "maxAge": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-security/config/config.default.js",
+      "includeSubdomains": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-security/config/config.default.js"
+    },
+    "dta": {
+      "enable": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-security/config/config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-security/config/config.default.js"
+    },
+    "noopen": {
+      "enable": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-security/config/config.default.js"
+    },
+    "nosniff": {
+      "enable": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-security/config/config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-security/config/config.default.js"
+    },
+    "xssProtection": {
+      "enable": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-security/config/config.default.js"
+    },
+    "csp": {
+      "enable": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-security/config/config.default.js",
+      "policy": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-security/config/config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-security/config/config.default.js",
+      "checkAddress": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-security/config/config.default.js"
+    }
+  },
+  "cors": {
+    "origin": "/Users/lronelove/Documents/fun/home/server/config/config.default.js",
+    "allowMethods": "/Users/lronelove/Documents/fun/home/server/config/config.default.js"
+  },
+  "bodyParser": {
+    "jsonLimit": "/Users/lronelove/Documents/fun/home/server/config/config.default.js",
+    "enable": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+    "formLimit": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+    "strict": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+    "queryString": {
+      "arrayLimit": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+      "depth": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+      "parameterLimit": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js"
+    }
+  },
+  "apiVersion": "/Users/lronelove/Documents/fun/home/server/config/config.default.js",
+  "mysql": {
+    "client": {
+      "host": "/Users/lronelove/Documents/fun/home/server/config/config.local.js",
+      "port": "/Users/lronelove/Documents/fun/home/server/config/config.local.js",
+      "user": "/Users/lronelove/Documents/fun/home/server/config/config.local.js",
+      "password": "/Users/lronelove/Documents/fun/home/server/config/config.local.js",
+      "database": "/Users/lronelove/Documents/fun/home/server/config/config.local.js"
+    },
+    "app": "/Users/lronelove/Documents/fun/home/server/config/config.local.js",
+    "agent": "/Users/lronelove/Documents/fun/home/server/config/config.local.js",
+    "default": {
+      "database": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-mysql/config/config.default.js",
+      "connectionLimit": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-mysql/config/config.default.js"
+    }
+  },
+  "session": {
+    "maxAge": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-session/config/config.default.js",
+    "key": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-session/config/config.default.js"
+  },
+  "helper": {
+    "shtml": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-security/config/config.default.js"
+  },
+  "jsonp": {
+    "limit": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-jsonp/config/config.default.js",
+    "callback": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-jsonp/config/config.default.js",
+    "csrf": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-jsonp/config/config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-onerror/config/config.default.js",
+    "templatePath": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-onerror/config/config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-i18n/config/config.default.js",
+    "dirs": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-i18n/config/config.default.js",
+    "queryField": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-i18n/config/config.default.js",
+    "cookieField": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-i18n/config/config.default.js",
+    "cookieMaxAge": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-i18n/config/config.default.js"
+  },
+  "watcher": {
+    "type": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-watcher/config/config.local.js",
+    "eventSources": {
+      "default": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-watcher/config/config.default.js",
+      "development": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-watcher/config/config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-schedule/config/config.default.js",
+      "file": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-schedule/config/config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-schedule/config/config.default.js"
+  },
+  "multipart": {
+    "mode": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-multipart/config/config.default.js",
+    "autoFields": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-multipart/config/config.default.js",
+    "defaultCharset": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-multipart/config/config.default.js",
+    "fieldNameSize": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-multipart/config/config.default.js",
+    "fieldSize": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-multipart/config/config.default.js",
+    "fields": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-multipart/config/config.default.js",
+    "fileSize": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-multipart/config/config.default.js",
+    "files": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-multipart/config/config.default.js",
+    "fileExtensions": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-multipart/config/config.default.js",
+    "whitelist": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-multipart/config/config.default.js",
+    "tmpdir": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-multipart/config/config.default.js",
+    "cleanSchedule": {
+      "cron": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-multipart/config/config.default.js"
+    }
+  },
+  "development": {
+    "watchDirs": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-development/config/config.default.js",
+    "ignoreDirs": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-development/config/config.default.js",
+    "fastReady": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-development/config/config.default.js",
+    "reloadOnDebug": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-development/config/config.default.js",
+    "overrideDefault": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-development/config/config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-logrotator/config/config.default.js",
+    "maxFileSize": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-logrotator/config/config.default.js",
+    "maxFiles": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-logrotator/config/config.default.js",
+    "rotateDuration": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-logrotator/config/config.default.js",
+    "maxDays": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-logrotator/config/config.default.js"
+  },
+  "static": {
+    "prefix": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-static/config/config.default.js",
+    "dir": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-static/config/config.default.js",
+    "dynamic": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-static/config/config.default.js",
+    "preload": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-static/config/config.default.js",
+    "buffer": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-static/config/config.default.js",
+    "maxFiles": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-static/config/config.default.js"
+  },
+  "view": {
+    "root": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-view/config/config.default.js",
+    "cache": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-view/config/config.local.js",
+    "defaultExtension": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-view/config/config.default.js",
+    "defaultViewEngine": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-view/config/config.default.js",
+    "mapping": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-view/config/config.default.js"
+  },
+  "validate": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-validate/config/config.default.js",
+  "env": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+  "name": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+  "proxy": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+  "protocolHeaders": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+  "ipHeaders": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+  "hostHeaders": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+  "pkg": {
+    "name": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+    "version": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+    "description": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+    "private": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+    "dependencies": {
+      "await-stream-ready": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+      "axios": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+      "egg": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+      "egg-cors": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+      "egg-mysql": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+      "egg-scripts": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+      "egg-validate": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+      "jsonwebtoken": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+      "md5": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+      "node-xss": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+      "ramda": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+      "utill": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js"
+    },
+    "devDependencies": {
+      "autod": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+      "autod-egg": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+      "egg-bin": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+      "egg-ci": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+      "egg-mock": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+      "eslint": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+      "eslint-config-egg": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+      "webstorm-disable-index": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js"
+    },
+    "engines": {
+      "node": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js"
+    },
+    "scripts": {
+      "start": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+      "stop": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+      "dev": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+      "debug": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+      "test": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+      "test-local": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+      "cov": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+      "lint": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+      "ci": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+      "autod": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js"
+    },
+    "ci": {
+      "version": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js"
+    },
+    "repository": {
+      "type": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+      "url": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js"
+    },
+    "author": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+    "license": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js"
+  },
+  "baseDir": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+  "HOME": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+  "rundir": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+  "dump": {
+    "ignore": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+    "notFound": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+    "sitefile": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+    "middlewares": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+    "httpClient": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js"
+  },
+  "logger": {
+    "dir": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+    "env": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+    "level": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+    "consoleLevel": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+    "disableConsoleAfterReady": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+    "outputJSON": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+    "buffer": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+    "appLogName": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+    "coreLogName": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+    "agentLogName": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+    "errorLogName": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+    "coreLogger": {
+      "consoleLevel": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.local.js"
+    },
+    "allowDebugAtProd": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+    "dnsCacheLookupInterval": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxLength": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+    "request": {
+      "timeout": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+    "logging": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js"
+  },
+  "coreMiddleware": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+  "workerStartTimeout": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+  "serverTimeout": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+      "port": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+      "hostname": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js",
+    "responseTimeout": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js"
+  },
+  "onClientError": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/config.default.js"
+}
