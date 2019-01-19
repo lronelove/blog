@@ -1,62 +1,71 @@
-/*
- Navicat Premium Data Transfer
+-- phpMyAdmin SQL Dump
+-- version phpStudy 2014
+-- http://www.phpmyadmin.net
+--
+-- 主机: localhost
+-- 生成日期: 2019 年 01 月 16 日 17:00
+-- 服务器版本: 5.5.53
+-- PHP 版本: 5.4.45
 
- Source Server         : local
- Source Server Type    : MySQL
- Source Server Version : 80013
- Source Host           : localhost:3306
- Source Schema         : lronelove
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
 
- Target Server Type    : MySQL
- Target Server Version : 80013
- File Encoding         : 65001
 
- Date: 16/01/2019 15:13:03
-*/
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
 
-SET NAMES utf8mb4;
-SET FOREIGN_KEY_CHECKS = 0;
+--
+-- 数据库: `lronelove`
+--
 
--- ----------------------------
--- Table structure for article
--- ----------------------------
-DROP TABLE IF EXISTS `article`;
-CREATE TABLE `article` (
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `article`
+--
+
+CREATE TABLE IF NOT EXISTS `article` (
   `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '文章id',
-  `title` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '标题',
-  `create_time` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '创建时间',
-  `content` text CHARACTER SET utf8 COLLATE utf8_general_ci COMMENT '文章内容',
-  `author` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT 'lronelove' COMMENT '作者',
-  `image` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '文章图片',
+  `title` varchar(255) CHARACTER SET utf8 DEFAULT NULL COMMENT '标题',
+  `create_time` datetime DEFAULT NULL COMMENT '创建时间',
+  `content` text CHARACTER SET utf8 COMMENT '文章内容',
+  `author` varchar(255) CHARACTER SET utf8 DEFAULT 'lronelove' COMMENT '作者',
+  `image` varchar(255) CHARACTER SET utf8 DEFAULT NULL COMMENT '文章图片',
   `status` tinyint(10) NOT NULL DEFAULT '1' COMMENT '0删除，1存在',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC AUTO_INCREMENT=4 ;
 
--- ----------------------------
--- Records of article
--- ----------------------------
-BEGIN;
-INSERT INTO `article` VALUES (1, '萤火虫', '2019-01-16 09:10:52', '萤火虫', 'lronelove', 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3188760330,463914582&fm=27&gp=0.jpg', 1);
-INSERT INTO `article` VALUES (2, '碎忆', '2019-01-16 12:46:15', 'jack', 'lronelove', 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3188760330,463914582&fm=27&gp=0.jpg', 1);
-INSERT INTO `article` VALUES (3, '美美', '2018-01-16 09:14:33', '美美', 'lronelove', 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3188760330,463914582&fm=27&gp=0.jpg', 1);
-COMMIT;
+--
+-- 转存表中的数据 `article`
+--
 
--- ----------------------------
--- Table structure for year_slogan
--- ----------------------------
-DROP TABLE IF EXISTS `year_slogan`;
-CREATE TABLE `year_slogan` (
-  `year` int(5) NOT NULL COMMENT '年',
-  `slogan` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '当年口号',
+INSERT INTO `article` (`id`, `title`, `create_time`, `content`, `author`, `image`, `status`) VALUES
+(1, '萤火虫', '2019-01-16 09:10:52', '萤火虫', 'lronelove', 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3188760330,463914582&fm=27&gp=0.jpg', 1),
+(2, '碎忆', '2019-01-16 12:46:15', 'jack', 'lronelove', 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3188760330,463914582&fm=27&gp=0.jpg', 1),
+(3, '美美', '2018-01-16 09:14:33', '美美', 'lronelove', 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3188760330,463914582&fm=27&gp=0.jpg', 1);
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `year_slogan`
+--
+
+CREATE TABLE IF NOT EXISTS `year_slogan` (
+  `year` int(5) NOT NULL AUTO_INCREMENT COMMENT '年',
+  `slogan` varchar(255) NOT NULL COMMENT '口号',
   PRIMARY KEY (`year`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2020 ;
 
--- ----------------------------
--- Records of year_slogan
--- ----------------------------
-BEGIN;
-INSERT INTO `year_slogan` VALUES (2018, '流年碎忆，2018');
-INSERT INTO `year_slogan` VALUES (2019, '平淡是真，2019');
-COMMIT;
+--
+-- 转存表中的数据 `year_slogan`
+--
 
-SET FOREIGN_KEY_CHECKS = 1;
+INSERT INTO `year_slogan` (`year`, `slogan`) VALUES
+(2018, '流年碎忆，2018'),
+(2019, '平淡似水，2019');
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

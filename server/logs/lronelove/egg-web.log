@@ -5064,3 +5064,39 @@
 2019-01-16 14:31:47,656 INFO 8997 [egg-watcher:application] watcher start success
 2019-01-16 14:31:47,660 INFO 8997 [egg-mysql] instance[0] status OK, rds currentTime: Wed Jan 16 2019 14:31:47 GMT+0800 (GMT+08:00)
 2019-01-16 14:31:47,667 INFO 8997 [egg:core] dump config after ready, 5ms
+2019-01-18 12:29:52,698 INFO 6064 [egg:logger] init all loggers with options: {"dir":"/Users/lronelove/Documents/fun/home/server/logs/lronelove","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"lronelove-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-01-18 12:29:52,727 INFO 6064 [egg-multipart] stream mode enable
+2019-01-18 12:29:52,728 INFO 6064 [egg-mysql] connecting root@127.0.0.1:3306/lronelove
+2019-01-18 12:29:52,889 INFO 6064 [egg-static] starting static serve /public/ -> /Users/lronelove/Documents/fun/home/server/app/public
+2019-01-18 12:29:52,891 INFO 6064 [egg-security] use methodnoallow middleware
+2019-01-18 12:29:52,892 INFO 6064 [egg-security] use noopen middleware
+2019-01-18 12:29:52,893 INFO 6064 [egg-security] use nosniff middleware
+2019-01-18 12:29:52,893 INFO 6064 [egg-security] use xssProtection middleware
+2019-01-18 12:29:52,894 INFO 6064 [egg-security] use xframe middleware
+2019-01-18 12:29:52,894 INFO 6064 [egg-security] use dta middleware
+2019-01-18 12:29:52,894 INFO 6064 [egg-security] compose 6 middlewares into one security middleware
+2019-01-18 12:29:52,909 INFO 6064 [egg:core] dump config after load, 5ms
+2019-01-18 12:29:52,938 INFO 6064 [egg-watcher:application] watcher start success
+2019-01-18 12:29:52,942 INFO 6064 [egg-mysql] instance[0] status OK, rds currentTime: Fri Jan 18 2019 12:29:52 GMT+0800 (GMT+08:00)
+2019-01-18 12:29:52,951 INFO 6064 [egg:core] dump config after ready, 7ms
+2019-01-18 17:52:02,700 WARN 6064 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-01-18 17:52:02,737 WARN 6064 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-01-18 21:05:01,523 WARN 6064 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-01-19 06:06:00,691 WARN 6064 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-01-19 06:06:00,693 WARN 6064 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-01-19 08:10:45,521 WARN 6064 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-01-19 13:19:46,424 INFO 23577 [egg:logger] init all loggers with options: {"dir":"/Users/lronelove/Documents/fun/home/server/logs/lronelove","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"lronelove-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-01-19 13:19:46,452 INFO 23577 [egg-multipart] stream mode enable
+2019-01-19 13:19:46,453 INFO 23577 [egg-mysql] connecting root@127.0.0.1:3306/lronelove
+2019-01-19 13:19:46,555 INFO 23577 [egg-static] starting static serve /public/ -> /Users/lronelove/Documents/fun/home/server/app/public
+2019-01-19 13:19:46,557 INFO 23577 [egg-security] use methodnoallow middleware
+2019-01-19 13:19:46,558 INFO 23577 [egg-security] use noopen middleware
+2019-01-19 13:19:46,558 INFO 23577 [egg-security] use nosniff middleware
+2019-01-19 13:19:46,558 INFO 23577 [egg-security] use xssProtection middleware
+2019-01-19 13:19:46,559 INFO 23577 [egg-security] use xframe middleware
+2019-01-19 13:19:46,559 INFO 23577 [egg-security] use dta middleware
+2019-01-19 13:19:46,559 INFO 23577 [egg-security] compose 6 middlewares into one security middleware
+2019-01-19 13:19:46,571 INFO 23577 [egg:core] dump config after load, 5ms
+2019-01-19 13:19:46,588 INFO 23577 [egg-watcher:application] watcher start success
+2019-01-19 13:19:46,604 INFO 23577 [egg-mysql] instance[0] status OK, rds currentTime: Sat Jan 19 2019 13:19:46 GMT+0800 (GMT+08:00)
+2019-01-19 13:19:46,609 INFO 23577 [egg:core] dump config after ready, 4ms

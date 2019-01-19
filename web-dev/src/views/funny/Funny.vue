@@ -6,14 +6,14 @@
             <!-- 左侧导航部分 -->
             <div class="left">
                 <el-collapse v-model="activeNames" @change="handleChange">
-                    <el-collapse-item v-for="(item, index) in navList" :name="item.year" :key="index">
-                        <div slot="title" class="left-year">{{item.yearDesc}}</div>
+                    <el-collapse-item v-for="(item, index) in navList" :name="item.name" :key="index">
+                        <div slot="title" class="left-year">{{item.title}}</div>
                         <ul class="left-item">
                             <li 
-                                v-for="(innerItem, j) in item.articles" 
+                                v-for="(innerItem, j) in item.games" 
                                 :key="j"
                             >
-                                <router-link to="/funny/bubble">{{innerItem.name}}</router-link>
+                                <router-link :to="{ path: innerItem.path }">{{innerItem.name}}</router-link>
                             </li>
                         </ul>  
                     </el-collapse-item>
@@ -43,47 +43,15 @@ export default {
           activeNames: [], // 左侧导航展开的栏目名字
           navList: [ // 导航列表数据
               {
-                  year: '2018', // 年
-                  yearDesc: '流年碎忆，2018', // 当年描述
-                  articles: [ // 当年文章列表
+                  name: 'game', // 年
+                  title: '旧忆似梦，往事如烟', // 当年描述
+                  games: [ // 当年文章列表
                     {
-                        name: '萤火虫',
-                        id: 1
-                    },
-                    {
-                        name: '牛肉面',
-                        id: 2
-                    },
-                  ]
-              },
-              {
-                  year: '2019', // 年
-                  yearDesc: '平淡是真，2019', // 当年描述
-                  articles: [ // 当年文章列表
-                    {
-                        name: '萤火虫',
-                        id: 3
-                    },
-                    {
-                        name: '牛肉面',
-                        id: 4
-                    },
+                        name: 'bubble',
+                        path: '/funny/bubble'
+                    }
                   ]
               }
-          ],
-          articlesList: [ // 文章列表数据
-            {
-                image: require('@/assets/img/logo.jpeg'),
-                title: '蒲公英',
-                content: '文章描述',
-                id: 1
-            },
-            {
-                image: require('@/assets/img/logo.jpeg'),
-                title: '蒲公英',
-                content: '文章描述',
-                id: 2
-            }  
           ]
       }
   },
@@ -138,10 +106,12 @@ export default {
 }
 
 .right {
+    position: relative;
     width: 70%;
     background: white;
     border-radius: $border-radius-default;
     padding: $padding-big;
+    min-height: 480px;
     padding-bottom: $padding-big - $margin-middle;
 }
 /* 右边内容展示区域部分 */

@@ -1299,3 +1299,63 @@ hostname: lronelove.local
 2019-01-16 14:31:46,155 INFO 7359 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/lronelove/Documents/fun/home/server/app/service/article.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4194304,"ino":14180911,"size":2004,"blocks":8,"atimeMs":1547620306142.9846,"mtimeMs":1547620306143.5886,"ctimeMs":1547620306143.5886,"birthtimeMs":1547609197624.6248,"atime":"2019-01-16T06:31:46.143Z","mtime":"2019-01-16T06:31:46.144Z","ctime":"2019-01-16T06:31:46.144Z","birthtime":"2019-01-16T03:26:37.625Z"},"remove":false,"isDirectory":false,"isFile":true}
 2019-01-16 14:31:46,206 INFO 7359 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/lronelove/Documents/fun/home/server/app/service/article.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4194304,"ino":14180911,"size":2004,"blocks":8,"atimeMs":1547620306142.9846,"mtimeMs":1547620306143.5886,"ctimeMs":1547620306143.5886,"birthtimeMs":1547609197624.6248,"atime":"2019-01-16T06:31:46.143Z","mtime":"2019-01-16T06:31:46.144Z","ctime":"2019-01-16T06:31:46.144Z","birthtime":"2019-01-16T03:26:37.625Z"},"remove":false,"isDirectory":false,"isFile":true}
 2019-01-16 14:31:46,444 INFO 7359 [egg-watcher] Recieved a change event from eventSource: {"event":"change","path":"/Users/lronelove/Documents/fun/home/server/app/service/article.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4194304,"ino":14180911,"size":2004,"blocks":8,"atimeMs":1547620306433.3425,"mtimeMs":1547620306433.924,"ctimeMs":1547620306433.924,"birthtimeMs":1547609197624.6248,"atime":"2019-01-16T06:31:46.433Z","mtime":"2019-01-16T06:31:46.434Z","ctime":"2019-01-16T06:31:46.434Z","birthtime":"2019-01-16T03:26:37.625Z"},"remove":false,"isDirectory":false,"isFile":true}
+2019-01-18 12:29:51,794 INFO 6063 [egg:logger] init all loggers with options: {"dir":"/Users/lronelove/Documents/fun/home/server/logs/lronelove","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"lronelove-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2019-01-18 12:29:51,925 INFO 6063 [egg:core] dump config after load, 5ms
+2019-01-18 12:29:51,964 INFO 6063 [egg-watcher] Start watching: ["/Users/lronelove/Documents/fun/home/server/app","/Users/lronelove/Documents/fun/home/server/config","/Users/lronelove/Documents/fun/home/server/mocks","/Users/lronelove/Documents/fun/home/server/mocks_proxy","/Users/lronelove/Documents/fun/home/server/app.js"]
+2019-01-18 12:29:51,964 INFO 6063 [egg-watcher] Start watching: "/Users/lronelove/Documents/fun/home/server/app"
+2019-01-18 12:29:51,964 INFO 6063 [egg-watcher] Start watching: "/Users/lronelove/Documents/fun/home/server/config"
+2019-01-18 12:29:51,964 INFO 6063 [egg-watcher] Start watching: "/Users/lronelove/Documents/fun/home/server/mocks"
+2019-01-18 12:29:51,964 INFO 6063 [egg-watcher] Start watching: "/Users/lronelove/Documents/fun/home/server/mocks_proxy"
+2019-01-18 12:29:51,964 INFO 6063 [egg-watcher] Start watching: "/Users/lronelove/Documents/fun/home/server/app.js"
+2019-01-18 12:29:51,965 INFO 6063 [egg-watcher:agent] watcher start success
+2019-01-18 12:29:52,074 INFO 6063 [egg:core] dump config after ready, 3ms
+2019-01-18 17:52:02,704 ERROR 6063 nodejs.ClusterClientNoResponseError: client no response in 15169057ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/lronelove/Documents/fun/home/server/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 6063
+hostname: lronelove.local
+
+2019-01-18 21:05:01,523 ERROR 6063 nodejs.ClusterClientNoResponseError: client no response in 10818860ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/lronelove/Documents/fun/home/server/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 6063
+hostname: lronelove.local
+
+2019-01-19 06:06:00,693 ERROR 6063 nodejs.ClusterClientNoResponseError: client no response in 32459151ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/lronelove/Documents/fun/home/server/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 6063
+hostname: lronelove.local
+
+2019-01-19 08:10:45,520 ERROR 6063 nodejs.ClusterClientNoResponseError: client no response in 7484810ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/lronelove/Documents/fun/home/server/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 6063
+hostname: lronelove.local
+
+2019-01-19 13:19:45,780 INFO 23576 [egg:logger] init all loggers with options: {"dir":"/Users/lronelove/Documents/fun/home/server/logs/lronelove","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"lronelove-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"agent"}
+2019-01-19 13:19:45,853 INFO 23576 [egg:core] dump config after load, 7ms
+2019-01-19 13:19:45,890 INFO 23576 [egg-watcher] Start watching: ["/Users/lronelove/Documents/fun/home/server/app","/Users/lronelove/Documents/fun/home/server/config","/Users/lronelove/Documents/fun/home/server/mocks","/Users/lronelove/Documents/fun/home/server/mocks_proxy","/Users/lronelove/Documents/fun/home/server/app.js"]
+2019-01-19 13:19:45,890 INFO 23576 [egg-watcher] Start watching: "/Users/lronelove/Documents/fun/home/server/app"
+2019-01-19 13:19:45,890 INFO 23576 [egg-watcher] Start watching: "/Users/lronelove/Documents/fun/home/server/config"
+2019-01-19 13:19:45,890 INFO 23576 [egg-watcher] Start watching: "/Users/lronelove/Documents/fun/home/server/mocks"
+2019-01-19 13:19:45,890 INFO 23576 [egg-watcher] Start watching: "/Users/lronelove/Documents/fun/home/server/mocks_proxy"
+2019-01-19 13:19:45,890 INFO 23576 [egg-watcher] Start watching: "/Users/lronelove/Documents/fun/home/server/app.js"
+2019-01-19 13:19:45,891 INFO 23576 [egg-watcher:agent] watcher start success
+2019-01-19 13:19:45,907 INFO 23576 [egg:core] dump config after ready, 4ms
