@@ -36,3 +36,23 @@ h5 {
 h6 {
   font-size: 12px;
 }
+
+.wordHidden {
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.wordHidden.oneline {
+  -webkit-line-clamp: 1;
+}
+
+.wordHidden.twoline {
+  -webkit-line-clamp: 2;
+}
+
+.wordHidden.threeline {
+  -webkit-line-clamp: 3;
+}

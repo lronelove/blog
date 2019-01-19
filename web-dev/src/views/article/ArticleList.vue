@@ -28,7 +28,7 @@
                             <img :src="item.image" alt="">
                             <div class="article-detail">
                                 <h3>{{item.title}}</h3>
-                                <p>{{item.content}}</p>
+                                <p class="wordHidden threeline" v-html="item.content"></p>
                             </div>
                         </router-link>
                     </li>
@@ -160,6 +160,7 @@ export default {
         .article-detail {
             width: 64%;
             padding: $padding-middle;
+            overflow: hidden;
 
             p {
                 text-align: left;

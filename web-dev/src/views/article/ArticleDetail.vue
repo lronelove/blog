@@ -4,8 +4,7 @@
         <div class="doc container">
             <h1 class="title">{{article.title}}</h1>
             <p class="author">{{article.author}}</p>
-            <article class="content">
-                {{article.content}}
+            <article class="content" v-html="article.content">
             </article>
         </div>
     </div>
@@ -91,6 +90,14 @@ export default {
     text-indent: 2 * $font-size-article;
     padding-top: $padding-middle;
     padding-bottom: $padding-middle;
+}
+
+article {
+    padding: $padding-big;
+
+    img {
+        max-width: 94%;
+    }
 }
 /* 主要区域 */
 
