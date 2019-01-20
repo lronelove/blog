@@ -35,6 +35,11 @@ export default new Router({
           path: 'bubble', // 冒泡
           name: 'bubble',
           component: () => import('./views/funny/items/Bubble.vue')
+        },
+        {
+          path: 'snake', // 贪吃蛇
+          name: 'snake',
+          component: () => import('./views/funny/items/Snake.vue')
         }
       ]
     }

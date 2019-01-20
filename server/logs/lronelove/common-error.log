@@ -206,3 +206,63 @@ name: "ClusterClientNoResponseError"
 pid: 6063
 hostname: lronelove.local
 
+2019-01-20 08:09:28,274 ERROR 52910 nodejs.ClusterClientNoResponseError: client no response in 21457104ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/lronelove/Documents/fun/home/server/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 52910
+hostname: lronelove.local
+
+2019-01-20 13:51:48,741 ERROR 52910 nodejs.ClusterClientNoResponseError: client no response in 20540253ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/lronelove/Documents/fun/home/server/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 52910
+hostname: lronelove.local
+
+2019-01-20 17:41:47,066 ERROR 52910 nodejs.ClusterClientNoResponseError: client no response in 4915517ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/lronelove/Documents/fun/home/server/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 52910
+hostname: lronelove.local
+
+2019-01-20 18:38:08,113 ERROR 52910 nodejs.ClusterClientNoResponseError: client no response in 2640973ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/lronelove/Documents/fun/home/server/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 52910
+hostname: lronelove.local
+
+2019-01-20 19:54:55,672 ERROR 52910 nodejs.ClusterClientNoResponseError: client no response in 3987356ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/lronelove/Documents/fun/home/server/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 52910
+hostname: lronelove.local
+
+2019-01-20 20:13:59,410 ERROR 52910 nodejs.ClusterClientNoResponseError: client no response in 1143727ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/lronelove/Documents/fun/home/server/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 52910
+hostname: lronelove.local
+

@@ -96,7 +96,12 @@ article {
     padding: $padding-big;
 
     img {
-        max-width: 94%;
+        width: 300px;
+        max-width: 300px;
+        margin-left: 260px;
+        height: auto;
+        margin-top: $margin-middle;
+        margin-bottom: $margin-middle;
     }
 }
 /* 主要区域 */

@@ -47,8 +47,12 @@ export default {
                   title: '旧忆似梦，往事如烟', // 当年描述
                   games: [ // 当年文章列表
                     {
-                        name: 'bubble',
+                        name: 'bubble', // bubble
                         path: '/funny/bubble'
+                    },
+                    {
+                        name: 'snake', // snake
+                        path: '/funny/snake'
                     }
                   ]
               }

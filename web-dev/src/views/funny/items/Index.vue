@@ -1,6 +1,7 @@
 <template>
   <div>
-      <h1>this is index of funny</h1>
+      <h1>人生如戏</h1>
+      <p>人生就像一场戏，你一认真，你就输了。</p>
   </div>
 </template>
 
