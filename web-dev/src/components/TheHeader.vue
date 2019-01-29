@@ -28,6 +28,7 @@ export default {
 /*!导航部分 */
 .nav-wrap {
     background: $black-bg;
+    min-width: 960px;
 }
 
 .nav {

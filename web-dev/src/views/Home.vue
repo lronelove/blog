@@ -13,6 +13,11 @@ export default {
   name: 'home',
   components: {
     Default
+  },
+  data () {
+    return {
+      content: 'android 标题'
+    }
   }
 }
 </script>

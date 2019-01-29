@@ -1,3 +1,4 @@
+// const host = 'http://47.112.12.78:7001/api/v1'
 const host = 'http://localhost:7001/api/v1'
 
 export default {

@@ -1,6 +1,6 @@
 <template>
   <default>
-    <div class="main-wrap">
+    <div class="main-wrap body">
         <div class="main container">
 
             <!-- 左侧导航部分 -->

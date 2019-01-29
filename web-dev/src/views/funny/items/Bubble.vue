@@ -57,36 +57,6 @@ export default {
       　　'当初的人呐',
       　　'你们如今在哪',
       　　'是否也在寻找梦的家'
-        ],
-        birthdayWords: [
-          '转眼间',
-          '又迎来你的生日',
-          '可为什么你',
-          '年年十八岁',
-          '希望这时候',
-          '有人陪着你度过',
-          '这个特殊的日子',
-          '好久没有见到你了',
-          '以前我们很近',
-          '现在我在深圳',
-          '你在北京',
-          '距离好远了',
-          '还是祝愿你',
-          '所有的努力',
-          '都有所回复',
-          '愿你',
-          '开开心心',
-          '愿你',
-          '有人懂你',
-          '有人爱你',
-          '你在乎的人',
-          '也在想你',
-          '如果来深圳',
-          '可以来找我',
-          '如果想喝酒',
-          '可以陪你喝两杯',
-          '嘿嘿 长话短说',
-          '生日快乐！'  
         ]
       }
   },
@@ -191,11 +161,10 @@ export default {
         this.$refs.container.removeChild(this.$refs.start) // 移除开始按钮
         this.$refs.audio.play() // 播放音乐
 
-        this.createWords(this.birthdayWords).then(res => {
+        this.createWords(this.allTheWords).then(res => {
           if (res === 'end') {
               this.$message({
-                // message: '往事随风，爱恨随意',
-                message: '鉴定完毕，梦琪芳龄十八',
+                message: '往事随风，爱恨随意',
                 type: 'success'
               })
               this.$refs.audio.remove()
