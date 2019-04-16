@@ -440,7 +440,7 @@
       ],
       "from": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/plugin.js",
       "path": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-development",
-      "version": "2.4.1"
+      "version": "2.4.2"
     },
     "logrotator": {
       "enable": true,
@@ -475,7 +475,7 @@
       "env": [],
       "from": "/Users/lronelove/Documents/fun/home/server/node_modules/egg/config/plugin.js",
       "path": "/Users/lronelove/Documents/fun/home/server/node_modules/egg-view",
-      "version": "2.1.1"
+      "version": "2.1.2"
     },
     "cors": {
       "enable": true,

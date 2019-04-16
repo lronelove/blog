@@ -17,7 +17,7 @@ class ArticleService extends Service {
             ajaxData.push({
                 id: item.id,
                 title: item.title,
-                content: item.content,
+                desc: item.desc,
                 image: item.image
             })
         }

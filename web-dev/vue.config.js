@@ -9,5 +9,6 @@ module.exports = {
           data: `@import "@/assets/css/common/variable.scss";@import "@/assets/css/common/common.scss";`
         }
       }
-    }
+    },
+    assetsDir: './'
 }

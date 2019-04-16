@@ -1,6 +1,6 @@
-import * as accepts from 'accepts';
-import * as KoaApplication from 'koa';
-import * as KoaRouter from 'koa-router';
+import accepts = require('accepts');
+import KoaApplication = require('koa');
+import KoaRouter = require('koa-router');
 import { EventEmitter } from 'events'
 import { Readable } from 'stream';
 import { Socket } from 'net';
@@ -44,27 +44,27 @@ declare module 'egg' {
     /**
      * request context
      */
-    ctx: Context;
+    protected ctx: Context;
 
     /**
      * Application
      */
-    app: Application;
+    protected app: Application;
 
     /**
      * Application config object
      */
-    config: EggAppConfig;
+    protected config: EggAppConfig;
 
     /**
      * service
      */
-    service: IService;
+    protected service: IService;
 
     /**
      * logger
      */
-    logger: EggLogger;
+    protected logger: EggLogger;
 
     constructor(ctx: Context);
   }
@@ -164,26 +164,6 @@ declare module 'egg' {
      * @member {Number} Context#realStatus
      */
     realStatus: number;
-  }
-
-  export interface ContextView { // tslint:disable-line
-    /**
-     * Render a file by view engine
-     * @param {String} name - the file path based on root
-     * @param {Object} [locals] - data used by template
-     * @param {Object} [options] - view options, you can use `options.viewEngine` to specify view engine
-     * @return {Promise<String>} result - return a promise with a render result
-     */
-    render(name: string, locals?: any, options?: any): Promise<string>;
-
-    /**
-     * Render a template string by view engine
-     * @param {String} tpl - template string
-     * @param {Object} [locals] - data used by template
-     * @param {Object} [options] - view options, you can use `options.viewEngine` to specify view engine
-     * @return {Promise<String>} result - return a promise with a render result
-     */
-    renderString(name: string, locals?: any, options?: any): Promise<string>;
   }
 
   export type LoggerLevel = EggLoggerLevel;
@@ -428,21 +408,13 @@ declare module 'egg' {
 
     static: {
       prefix: string;
-      dir: string;
+      dir: string | string[];
       // support lazy load
       dynamic: boolean;
       preload: boolean;
       buffer: boolean;
       maxFiles: number;
     } & PlainObject;
-
-    view: {
-      root: string;
-      cache: boolean;
-      defaultExtension: string;
-      defaultViewEngine: string;
-      mapping: PlainObject<string>;
-    };
 
     watcher: PlainObject;
 
@@ -466,7 +438,7 @@ declare module 'egg' {
     headers: { [key: string]: string };
   }
 
-  export interface Router extends KoaRouter {
+  export interface Router extends KoaRouter<any, Context> {
     /**
      * restful router api
      */
@@ -704,6 +676,27 @@ declare module 'egg' {
 
     truncated: boolean;
   }
+                   
+  interface GetFileStreamOptions {
+    requireFile?: boolean; // required file submit, default is true
+    defCharset?: string;
+    limits?: {
+      fieldNameSize?: number;
+      fieldSize?: number;
+      fields?: number;
+      fileSize?: number;
+      files?: number;
+      parts?: number;
+      headerPairs?: number;
+    };
+    checkFile?(
+      fieldname: string,
+      file: any,
+      filename: string,
+      encoding: string,
+      mimetype: string
+    ): void | Error;
+  }
 
   /**
   * KoaApplication's Context will carry the default 'cookie' property in
@@ -903,34 +896,11 @@ declare module 'egg' {
     starttime: number;
 
     /**
-     * View instance that is created every request
-     */
-    view: ContextView;
-
-    /**
      * http request helper base on httpclient, it will auto save httpclient log.
      * Keep the same api with httpclient.request(url, args).
      * See https://github.com/node-modules/urllib#api-doc for more details.
      */
     curl<T = any>(url: string, opt?: RequestOptions): Promise<T>;
-
-    /**
-     * Render a file by view engine
-     * @param {String} name - the file path based on root
-     * @param {Object} [locals] - data used by template
-     * @param {Object} [options] - view options, you can use `options.viewEngine` to specify view engine
-     * @return {Promise<String>} result - return a promise with a render result
-     */
-    render(name: string, locals?: any, options?: any): Promise<string>;
-
-    /**
-     * Render a template string by view engine
-     * @param {String} tpl - template string
-     * @param {Object} [locals] - data used by template
-     * @param {Object} [options] - view options, you can use `options.viewEngine` to specify view engine
-     * @return {Promise<String>} result - return a promise with a render result
-     */
-    renderString(name: string, locals?: any, options?: any): Promise<string>;
 
     __(key: string, ...values: string[]): string;
     gettext(key: string, ...values: string[]): string;
@@ -944,10 +914,11 @@ declare module 'egg' {
      * console.log(stream.fields);
      * ```
      * @method Context#getFileStream
+     * @param {Object} options
      * @return {ReadStream} stream
      * @since 1.0.0
      */
-    getFileStream(): Promise<FileStream>;
+    getFileStream(options?: GetFileStreamOptions): Promise<FileStream>;
 
     /**
      * @see Responce.redirect
@@ -988,7 +959,7 @@ declare module 'egg' {
 
   export interface IMiddleware extends PlainObject { } // tslint:disable-line
 
-  export interface IHelper extends PlainObject {
+  export interface IHelper extends PlainObject, BaseContextClass {
     /**
      * Generate URL path(without host) for route. Takes the route name and a map of named params.
      * @method Helper#pathFor

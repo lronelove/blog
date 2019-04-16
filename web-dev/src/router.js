@@ -5,6 +5,10 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
+    { 
+      path: '*',
+      component: () => import('./views/Home.vue')
+    },
     {
       path: '/', // 首页
       name: 'home',

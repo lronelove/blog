@@ -28,7 +28,7 @@
                             <img :src="item.image" alt="">
                             <div class="article-detail">
                                 <h3>{{item.title}}</h3>
-                                <p class="wordHidden threeline" v-html="item.content"></p>
+                                <p class="wordHidden threeline" v-html="item.desc"></p>
                             </div>
                         </router-link>
                     </li>
@@ -72,7 +72,7 @@ export default {
            /* {
                 image: require('@/assets/img/logo.jpeg'),
                 title: '蒲公英',
-                content: '文章描述',
+                desc: '文章描述',
                 id: 1
             }   */
           ]

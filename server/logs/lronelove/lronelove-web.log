@@ -136,3 +136,75 @@ headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
 pid: 8997
 hostname: lronelove.local
 
+2019-02-06 10:43:59,559 ERROR 8743 [-/127.0.0.1/-/1ms GET /] nodejs.ECONNREFUSEDError: connect ECONNREFUSED 47.112.12.78:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1117:14)
+    --------------------
+    at Protocol._enqueue (/Users/lronelove/Documents/fun/home/server/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/Users/lronelove/Documents/fun/home/server/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/Users/lronelove/Documents/fun/home/server/node_modules/mysql/lib/Connection.js:118:18)
+    at Pool.getConnection (/Users/lronelove/Documents/fun/home/server/node_modules/mysql/lib/Pool.js:48:16)
+    at /Users/lronelove/Documents/fun/home/server/node_modules/pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/Users/lronelove/Documents/fun/home/server/node_modules/pify/index.js:12:10)
+    at Pool.ret [as getConnection] (/Users/lronelove/Documents/fun/home/server/node_modules/pify/index.js:56:34)
+    at Pool.query (/Users/lronelove/Documents/fun/home/server/node_modules/mysql/lib/Pool.js:202:8)
+    at /Users/lronelove/Documents/fun/home/server/node_modules/pify/index.js:29:7
+    sql: select now() as currentTime;
+errno: "ECONNREFUSED"
+code: "ECONNREFUSED"
+syscall: "connect"
+address: "47.112.12.78"
+port: 3306
+fatal: true
+name: "ECONNREFUSEDError"
+pid: 8743
+hostname: lronelove.local
+
+2019-02-06 10:44:31,651 ERROR 8759 [-/127.0.0.1/-/1ms GET /] nodejs.ECONNREFUSEDError: connect ECONNREFUSED 47.112.12.78:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1117:14)
+    --------------------
+    at Protocol._enqueue (/Users/lronelove/Documents/fun/home/server/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/Users/lronelove/Documents/fun/home/server/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/Users/lronelove/Documents/fun/home/server/node_modules/mysql/lib/Connection.js:118:18)
+    at Pool.getConnection (/Users/lronelove/Documents/fun/home/server/node_modules/mysql/lib/Pool.js:48:16)
+    at /Users/lronelove/Documents/fun/home/server/node_modules/pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/Users/lronelove/Documents/fun/home/server/node_modules/pify/index.js:12:10)
+    at Pool.ret [as getConnection] (/Users/lronelove/Documents/fun/home/server/node_modules/pify/index.js:56:34)
+    at Pool.query (/Users/lronelove/Documents/fun/home/server/node_modules/mysql/lib/Pool.js:202:8)
+    at /Users/lronelove/Documents/fun/home/server/node_modules/pify/index.js:29:7
+    sql: select now() as currentTime;
+errno: "ECONNREFUSED"
+code: "ECONNREFUSED"
+syscall: "connect"
+address: "47.112.12.78"
+port: 3306
+fatal: true
+name: "ECONNREFUSEDError"
+pid: 8759
+hostname: lronelove.local
+
+2019-02-06 10:44:49,596 ERROR 8768 [-/127.0.0.1/-/0ms GET /] nodejs.ECONNREFUSEDError: connect ECONNREFUSED 47.112.12.78:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1117:14)
+    --------------------
+    at Protocol._enqueue (/Users/lronelove/Documents/fun/home/server/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/Users/lronelove/Documents/fun/home/server/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at PoolConnection.connect (/Users/lronelove/Documents/fun/home/server/node_modules/mysql/lib/Connection.js:118:18)
+    at Pool.getConnection (/Users/lronelove/Documents/fun/home/server/node_modules/mysql/lib/Pool.js:48:16)
+    at /Users/lronelove/Documents/fun/home/server/node_modules/pify/index.js:29:7
+    at new Promise (<anonymous>)
+    at Pool.<anonymous> (/Users/lronelove/Documents/fun/home/server/node_modules/pify/index.js:12:10)
+    at Pool.ret [as getConnection] (/Users/lronelove/Documents/fun/home/server/node_modules/pify/index.js:56:34)
+    at Pool.query (/Users/lronelove/Documents/fun/home/server/node_modules/mysql/lib/Pool.js:202:8)
+    at /Users/lronelove/Documents/fun/home/server/node_modules/pify/index.js:29:7
+    sql: select now() as currentTime;
+errno: "ECONNREFUSED"
+code: "ECONNREFUSED"
+syscall: "connect"
+address: "47.112.12.78"
+port: 3306
+fatal: true
+name: "ECONNREFUSEDError"
+pid: 8768
+hostname: lronelove.local
+

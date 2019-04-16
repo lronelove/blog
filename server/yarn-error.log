@@ -1,0 +1,79 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.13.0/libexec/bin/yarn.js install --production
+
+PATH: 
+  /Library/Frameworks/Python.framework/Versions/3.7/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:/Users/lronelove/Documents/software/apache-maven-3.6.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mysql/bin
+
+Yarn version: 
+  1.13.0
+
+Node version: 
+  10.15.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, open '/Users/lronelove/Documents/fun/home/server/yarn.lock'
+
+npm manifest: 
+  {
+    "name": "lronelove",
+    "version": "1.0.0",
+    "description": "",
+    "private": true,
+    "dependencies": {
+      "await-stream-ready": "^1.0.1",
+      "axios": "^0.18.0",
+      "egg": "^2.2.1",
+      "egg-cors": "^2.1.0",
+      "egg-mysql": "^3.0.0",
+      "egg-scripts": "^2.5.0",
+      "egg-validate": "^2.0.1",
+      "jsonwebtoken": "^8.3.0",
+      "md5": "^2.2.1",
+      "node-xss": "^0.0.1",
+      "ramda": "^0.25.0",
+      "utill": "^0.1.3"
+    },
+    "devDependencies": {
+      "autod": "^3.0.1",
+      "autod-egg": "^1.0.0",
+      "egg-bin": "^4.3.5",
+      "egg-ci": "^1.8.0",
+      "egg-mock": "^3.14.0",
+      "eslint": "^4.11.0",
+      "eslint-config-egg": "^6.0.0",
+      "webstorm-disable-index": "^1.2.0"
+    },
+    "engines": {
+      "node": ">=8.9.0"
+    },
+    "scripts": {
+      "start": "egg-scripts start --daemon --title=egg-server-lronelove",
+      "stop": "egg-scripts stop --title=egg-server-lronelove",
+      "dev": "egg-bin dev",
+      "debug": "egg-bin debug",
+      "test": "npm run lint -- --fix && npm run test-local",
+      "test-local": "egg-bin test",
+      "cov": "egg-bin cov",
+      "lint": "eslint .",
+      "ci": "npm run lint && npm run cov",
+      "autod": "autod"
+    },
+    "ci": {
+      "version": "8"
+    },
+    "repository": {
+      "type": "git",
+      "url": ""
+    },
+    "author": "",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

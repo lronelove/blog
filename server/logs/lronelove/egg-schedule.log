@@ -692,3 +692,25 @@
 2019-01-20 00:08:29,110 INFO 52911 [egg-schedule]: register schedule /Users/lronelove/Documents/fun/home/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
 2019-01-20 00:08:29,342 INFO 52910 [Timer] /Users/lronelove/Documents/fun/home/server/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 85890662ms at 2019-01-21 00:00:00.004
 2019-01-20 00:08:29,344 INFO 52910 [Timer] /Users/lronelove/Documents/fun/home/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 85891658ms at 2019-01-21 00:00:01.002
+2019-02-06 10:43:59,376 INFO 8743 [egg-schedule]: register schedule /Users/lronelove/Documents/fun/home/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-02-06 10:43:59,376 INFO 8743 [egg-schedule]: register schedule /Users/lronelove/Documents/fun/home/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-02-06 10:44:31,411 INFO 8759 [egg-schedule]: register schedule /Users/lronelove/Documents/fun/home/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-02-06 10:44:31,411 INFO 8759 [egg-schedule]: register schedule /Users/lronelove/Documents/fun/home/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-02-06 10:44:49,318 INFO 8768 [egg-schedule]: register schedule /Users/lronelove/Documents/fun/home/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-02-06 10:44:49,318 INFO 8768 [egg-schedule]: register schedule /Users/lronelove/Documents/fun/home/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-03-10 11:57:42,528 INFO 2478 [egg-schedule]: register schedule /Users/lronelove/Documents/fun/home/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-03-10 11:57:42,528 INFO 2478 [egg-schedule]: register schedule /Users/lronelove/Documents/fun/home/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-03-10 11:57:42,756 INFO 2477 [Timer] /Users/lronelove/Documents/fun/home/server/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 43337247ms at 2019-03-11 00:00:00.003
+2019-03-10 11:57:42,756 INFO 2477 [Timer] /Users/lronelove/Documents/fun/home/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 43338244ms at 2019-03-11 00:00:01.000
+2019-03-10 12:01:59,423 INFO 2557 [egg-schedule]: register schedule /Users/lronelove/Documents/fun/home/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-03-10 12:01:59,423 INFO 2557 [egg-schedule]: register schedule /Users/lronelove/Documents/fun/home/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-03-10 12:02:00,170 INFO 2559 [egg-schedule]: register schedule /Users/lronelove/Documents/fun/home/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-03-10 12:02:00,171 INFO 2559 [egg-schedule]: register schedule /Users/lronelove/Documents/fun/home/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-03-10 12:02:03,940 INFO 2562 [egg-schedule]: register schedule /Users/lronelove/Documents/fun/home/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-03-10 12:02:03,940 INFO 2562 [egg-schedule]: register schedule /Users/lronelove/Documents/fun/home/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-03-10 12:02:04,544 INFO 2563 [egg-schedule]: register schedule /Users/lronelove/Documents/fun/home/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-03-10 12:02:04,544 INFO 2563 [egg-schedule]: register schedule /Users/lronelove/Documents/fun/home/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-03-10 12:12:51,459 INFO 3569 [egg-schedule]: register schedule /Users/lronelove/Documents/fun/home/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-03-10 12:12:51,459 INFO 3569 [egg-schedule]: register schedule /Users/lronelove/Documents/fun/home/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-03-10 12:12:52,149 INFO 3570 [egg-schedule]: register schedule /Users/lronelove/Documents/fun/home/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-03-10 12:12:52,149 INFO 3570 [egg-schedule]: register schedule /Users/lronelove/Documents/fun/home/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
